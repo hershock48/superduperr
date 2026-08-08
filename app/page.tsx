@@ -168,7 +168,7 @@ export default function Home() {
                 delivery: weekly, bi-weekly, or monthly. Pause or cancel anytime.
               </p>
             </div>
-            <Link href="/shop?cat=subscriptions" className="btn dark">Join a club <span className="arr">→</span></Link>
+            <Link href="/shop?cat=subscriptions" className="btn dark">Join the club <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -176,7 +176,9 @@ export default function Home() {
       {/* ————— EMAIL ————— */}
       <section className="section deep" style={{ paddingTop: 56, paddingBottom: 56 }}>
         <div className="wrap" style={{ maxWidth: 640 }}>
-          <h2 className="display center">Get 50 points for showing up.</h2>
+          <h2 className="display center">
+            Get <span className="countup" data-target="50">50</span> points for showing up.
+          </h2>
           <p className="lead center mt-16" style={{ margin: "14px auto 26px" }}>
             Join the list for new roasts, member-only drops, and points toward free coffee.
           </p>

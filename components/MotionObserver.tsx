@@ -7,7 +7,24 @@
 
 import { useEffect } from "react";
 
-const SELECTOR = ".section-head, .day-card, .pcard, .stars, .small-co";
+const SELECTOR = ".section-head, .day-card, .pcard, .stars, .small-co, .countup";
+
+// Quick count-up for number callouts (e.g. "Get 50 points"): runs once
+// when the element scrolls into view. Without JS or with reduced motion
+// the real number is already in the markup.
+function runCount(el: HTMLElement) {
+  const target = parseInt(el.dataset.target ?? el.textContent ?? "0", 10);
+  if (!Number.isFinite(target)) return;
+  const duration = 750;
+  const start = performance.now();
+  const tick = (now: number) => {
+    const t = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+    el.textContent = String(Math.round(eased * target));
+    if (t < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
 
 export default function MotionObserver() {
   useEffect(() => {
@@ -19,6 +36,9 @@ export default function MotionObserver() {
         for (const e of entries) {
           if (e.isIntersecting) {
             e.target.classList.add("in");
+            if (e.target instanceof HTMLElement && e.target.matches(".countup")) {
+              runCount(e.target);
+            }
             io.unobserve(e.target);
           }
         }
