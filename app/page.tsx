@@ -161,8 +161,7 @@ export default function Home() {
             <div style={{ maxWidth: 560 }}>
               <span className="eyebrow" style={{ background: "var(--petrol)" }}>Clubs &amp; subscriptions</span>
               <h2 className="display">
-                Coffee that <span className="shows-up">shows&nbsp;up</span> before you{" "}
-                <span className="run-out">run&nbsp;out.</span>
+                Coffee that shows up before you <span className="run-out">run&nbsp;out.</span>
               </h2>
               <p className="mt-8">
                 Of-the-month clubs from $18, or subscribe to your favorites and save 12.5% on every

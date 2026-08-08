@@ -65,14 +65,11 @@ export default function MotionObserver() {
       }
 
       // "run out." drifts right and out of the clubs banner as it rises
-      // past the middle of the viewport. "shows up" waits until the
-      // banner is well into view (top above ~62% of the viewport)
-      // before sliding in.
+      // past the middle of the viewport.
       const runout = document.querySelector<HTMLElement>(".run-out");
       if (runout) {
         const host = runout.closest(".banner") ?? runout;
         const r = host.getBoundingClientRect();
-        if (r.top < vh * 0.62 && r.bottom > 0) host.classList.add("in-deep");
         const p = clamp01((vh * 0.55 - r.top) / (vh * 0.5));
         runout.style.setProperty("--runout", p.toFixed(3));
       }
