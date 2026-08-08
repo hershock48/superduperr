@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Find Us in Stores",
   description:
-    "Find Super Duper Coffee cold brew and fresh roasted coffee in stores across Michigan — including Meijer — or order direct with free reward points.",
+    "Find Super Duper Coffee cold brew and fresh roasted coffee in stores across Michigan, including Meijer, or order direct with free reward points.",
 };
 
 const DEMO_STORES = [
   { name: "Meijer", area: "Locations rolling out across Michigan", tag: "New!" },
-  { name: "[Local grocer — client to supply]", area: "City, MI", tag: "" },
-  { name: "[Coffee shop partner — client to supply]", area: "City, MI", tag: "" },
-  { name: "[Farmers market — client to supply]", area: "Seasonal", tag: "" },
+  { name: "[Local grocer: client to supply]", area: "City, MI", tag: "" },
+  { name: "[Coffee shop partner: client to supply]", area: "City, MI", tag: "" },
+  { name: "[Farmers market: client to supply]", area: "Seasonal", tag: "" },
 ];
 
 export default function FindUs() {
@@ -25,7 +25,7 @@ export default function FindUs() {
           </h1>
           <p className="lead mt-24">
             Big news: as a 2026 Meijer Award winner, Super Duper Cold Brew is headed to Meijer stores.
-            Here&apos;s where to grab a pouch in the wild — and if your favorite store doesn&apos;t carry
+            Here&apos;s where to grab a pouch in the wild. If your favorite store doesn&apos;t carry
             us yet, tell them (or tell us, and we&apos;ll do the asking).
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function FindUs() {
             ))}
           </div>
           <p className="demo-note mt-24">
-            [Concept — store list and map to be populated with Super Duper&apos;s actual retail partners]
+            [Concept: store list and map to be populated with Super Duper&apos;s actual retail partners]
           </p>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function FindUs() {
             <h2 className="display">Want Super Duper in your store?</h2>
             <p className="lead mt-16">
               We wholesale pouches, tap bags, and fresh roasted beans to grocers, cafés, gyms, and
-              offices — with the same one-week freshness cycle.
+              offices, all on the same one-week freshness cycle.
             </p>
             <p className="mt-24"><Link href="/wholesale" className="btn dark">Wholesale info →</Link></p>
           </div>

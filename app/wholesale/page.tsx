@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import WholesaleForm from "@/components/WholesaleForm";
 
 export const metadata: Metadata = {
-  title: "Wholesale — Stock Super Duper in Your Store",
+  title: "Wholesale: Stock Super Duper in Your Store",
   description:
     "Wholesale Michigan cold brew and fresh roasted coffee for grocers, cafés, gyms, and offices. 2026 Meijer Award winner, weekly freshness cycle. Apply for an account.",
 };
@@ -18,7 +18,7 @@ export default function Wholesale() {
           </h1>
           <p className="lead mt-24">
             We partner with grocers, cafés, gyms, offices, and shops that want award-winning Michigan
-            cold brew and fresh roasted coffee — delivered on a weekly freshness cycle, with real
+            cold brew and fresh roasted coffee, delivered on a weekly freshness cycle with real
             humans answering the email.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function Wholesale() {
             <h3 className="display" style={{ fontSize: 19 }}>What we wholesale</h3>
             <p className="mt-8">
               Cold brew adventure pouches (grab-and-go), 50 oz tap bags (fridge and events), and fresh
-              roasted 1 lb bags — plus rotating seasonal roasts.
+              roasted 1 lb bags, plus rotating seasonal roasts.
             </p>
           </div>
           <div className="card">
@@ -44,7 +44,7 @@ export default function Wholesale() {
             <h3 className="display" style={{ fontSize: 19 }}>How it works</h3>
             <p className="mt-8">
               Apply below, get approved, and unlock wholesale pricing in your account. Order online
-              anytime — subscriptions or one-time — roasted fresh for every delivery.
+              anytime, subscriptions or one-time, roasted fresh for every delivery.
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Wholesale() {
               and a sample kit.
             </p>
             <p className="mt-16" style={{ fontWeight: 700 }}>sup@superduperdrinks.com</p>
-            <p className="demo-note mt-16">[Concept — form submits to the live store in production]</p>
+            <p className="demo-note mt-16">[Concept: form submits to the live store in production]</p>
           </div>
           <WholesaleForm />
         </div>

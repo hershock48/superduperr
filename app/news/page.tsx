@@ -21,7 +21,7 @@ const POSTS: Post[] = [
     date: "May 2026",
     tag: "Big news",
     blurb:
-      "During National Small Business Week, Meijer and the MSU Product Center named Super Duper Cold Brew a 2026 Meijer Award winner. Here's what that means — and where you'll find us next.",
+      "During National Small Business Week, Meijer and the MSU Product Center named Super Duper Cold Brew a 2026 Meijer Award winner. Here's what that means, and where you'll find us next.",
     concept: true,
   },
   {
@@ -36,7 +36,7 @@ const POSTS: Post[] = [
     title: "New Beans Who Dis",
     date: "March 2025",
     tag: "New roasts",
-    blurb: "Excited for some new freshness 😎 — fresh arrivals hitting the roaster this month.",
+    blurb: "Excited for some new freshness 😎. Fresh arrivals hitting the roaster this month.",
   },
   {
     title: "February Roaster's Choice: Sumatra Mandheling",
@@ -48,7 +48,7 @@ const POSTS: Post[] = [
     title: "It's like a Super Duper Coffee Club",
     date: "July 2023",
     tag: "Clubs",
-    blurb: "Everything you need to know about the of-the-month clubs — and how members steer the roasts.",
+    blurb: "Everything you need to know about the of-the-month clubs, and how members steer the roasts.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function News() {
           <div style={{ maxWidth: 560 }}>
             <h2 className="display" style={{ fontSize: 26 }}>Never miss a drop.</h2>
             <p style={{ color: "#cfc3b8", marginTop: 6 }}>
-              New roasts and news, straight to your inbox — plus 50 points for joining.
+              New roasts and news, straight to your inbox, plus 50 points for joining.
             </p>
           </div>
           <Link href="/rewards" className="btn primary">Join the list →</Link>

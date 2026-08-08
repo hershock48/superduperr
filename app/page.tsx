@@ -24,8 +24,8 @@ export default function Home() {
               Never go without <span className="hl">super&nbsp;duper</span> good coffee.
             </h1>
             <p className="lead">
-              Fresh roasted to order in Michigan. Cold brewed to be strong and smooth.
-              Packed in pouches and tap bags built for wherever your day goes.
+              Fresh roasted to order in Michigan. Cold brewed strong and smooth. Packed in
+              adventure pouches and tap bags for the trail, the campsite, and everywhere a coffee shop isn&apos;t.
             </p>
             <div className="btn-row">
               <Link href="/shop?cat=cold-brew" className="btn primary">Shop Cold Brew</Link>
@@ -35,7 +35,7 @@ export default function Home() {
           <div className="hero-art">
             <Image
               src="/brand/hero-splash.png"
-              alt="Super Duper Cold Brew Adventure Pouches — medium and dark roast"
+              alt="Super Duper Cold Brew Adventure Pouches in medium and dark roast"
               width={679}
               height={534}
               priority
@@ -51,7 +51,7 @@ export default function Home() {
             <span className="eyebrow orange">The freshness cycle</span>
             <h2 className="display">Fresh isn&apos;t a vibe.<br />It&apos;s a Tuesday.</h2>
             <p className="lead">
-              Every single order runs on a one-week freshness loop. That&apos;s not a slogan — it&apos;s the schedule.
+              Every single order runs on a one-week freshness loop. That&apos;s not a slogan. It&apos;s the schedule.
             </p>
           </div>
           <div className="timeline">
@@ -83,7 +83,7 @@ export default function Home() {
       <section className="section">
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow">The lineup</span>
+            <span className="eyebrow">Adventure fuel</span>
             <h2 className="display">Crowd favorites</h2>
           </div>
           <div className="grid-4">
@@ -100,10 +100,10 @@ export default function Home() {
         <div className="wrap center">
           <div className="stars" aria-label="5 out of 5 stars">★★★★★</div>
           <p className="review-quote mt-16">
-            “It&apos;s like a <span className="hl">coffee Capri&nbsp;Sun</span> — except it actually wakes you up.”
+            “It&apos;s like a <span className="hl">coffee Capri&nbsp;Sun</span>, except it actually wakes you up.”
           </p>
           <p className="lead mt-16" style={{ margin: "16px auto 0" }}>
-            — Verified customer review, Cold Brew Adventure Pouch
+            Verified customer review, Cold Brew Adventure Pouch
           </p>
           <p className="mt-24">
             <Link href="/rewards" className="btn ghost small">Leave a review, earn points →</Link>
@@ -118,7 +118,7 @@ export default function Home() {
             <span className="eyebrow">Made in Michigan</span>
             <h2 className="display">Small company. Big deal.</h2>
             <p className="lead mt-16">
-              Super Duper started small in Michigan and grew the honest way — through the MSU Product
+              Super Duper started small in Michigan and grew the honest way: through the MSU Product
               Center, farmers-market miles, and coffee good enough to talk about. In 2026, Meijer and the
               MSU Product Center named Super Duper Cold Brew a Meijer Award winner during National Small
               Business Week.
@@ -141,7 +141,7 @@ export default function Home() {
               />
               <div style={{ padding: "10px 30px 34px" }}>
                 <h3 className="display center mt-16">From our roaster to Meijer shelves</h3>
-                <p className="center mt-8">Find us in stores across Michigan — or straight from the source, right here.</p>
+                <p className="center mt-8">Find us in stores across Michigan, or straight from the source right here.</p>
                 <p className="center mt-16"><Link href="/find-us" className="btn dark small">Find us in stores →</Link></p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
               <h2 className="display">Coffee that shows up before you run out.</h2>
               <p className="mt-8">
                 Of-the-month clubs from $18, or subscribe to your favorites and save 12.5% on every
-                delivery — weekly, bi-weekly, or monthly. Pause or cancel anytime.
+                delivery: weekly, bi-weekly, or monthly. Pause or cancel anytime.
               </p>
             </div>
             <Link href="/shop?cat=subscriptions" className="btn dark">Join a club →</Link>

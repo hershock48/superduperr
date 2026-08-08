@@ -39,7 +39,7 @@ export default function BuyBox({ p }: { p: Product }) {
           <label className={`buy-option${mode === "sub" ? " active" : ""}`}>
             <input type="radio" name="mode" checked={mode === "sub"} onChange={() => setMode("sub")} />
             <div>
-              <div className="opt-title">Subscribe &amp; save 12.5% — {fmt(subPrice)}</div>
+              <div className="opt-title">Subscribe &amp; save 12.5%: {fmt(subPrice)}</div>
               <div className="opt-sub">Pause, skip, or cancel anytime. Points on every delivery.</div>
             </div>
           </label>
@@ -66,7 +66,7 @@ export default function BuyBox({ p }: { p: Product }) {
         className="btn primary"
         style={{ width: "100%" }}
         onClick={() =>
-          show(mode === "sub" || p.monthlyClub ? "Subscription added — demo build ✓" : "Added to cart — demo build ✓")
+          show(mode === "sub" || p.monthlyClub ? "Subscription added (demo build) ✓" : "Added to cart (demo build) ✓")
         }
       >
         {p.monthlyClub ? "Join the club" : mode === "sub" ? "Start subscription" : "Add to cart"} →
@@ -77,7 +77,7 @@ export default function BuyBox({ p }: { p: Product }) {
         </p>
       )}
       <p className="form-note center" style={{ marginTop: 6 }}>
-        Concept build — checkout connects to the live store in production.
+        Concept build. Checkout connects to the live store in production.
       </p>
       {node}
     </div>

@@ -9,7 +9,7 @@ export default function NotFound() {
           This page is decaf.
         </h1>
         <p className="lead mt-16" style={{ margin: "16px auto 0" }}>
-          Whatever was here is gone or never existed — but the coffee is very real and very nearby.
+          Whatever was here is gone or never existed, but the coffee is very real and very nearby.
         </p>
         <div className="btn-row mt-32" style={{ justifyContent: "center" }}>
           <Link href="/shop" className="btn primary">Shop coffee</Link>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Rewards — Points for Coffee, Photos & Friends",
+  title: "Rewards: Points for Coffee, Photos & Friends",
   description:
     "Super Duper Rewards: 50 points for joining, points on every order, 100 points for photo and video uploads, and send points to friends. Points = free coffee.",
 };
@@ -12,7 +12,7 @@ const WAYS = [
   { icon: "👋", title: "Join the club", pts: "+50 pts", body: "Create an account and you're 50 points closer to free coffee before you've bought anything." },
   { icon: "☕", title: "Buy coffee", pts: "+1 pt / $1", body: "Every order earns points automatically. Buy coffee, earn coffee. The circle of life." },
   { icon: "📸", title: "Upload your adventures", pts: "+100 pts", body: "Post a photo or video of your Super Duper coffee in the wild and we'll load 100 points onto your account." },
-  { icon: "⭐", title: "Review what you drink", pts: "+ pts", body: "Tell the world what you think — reviews earn bonus points. (Honest ones. We can take it.)" },
+  { icon: "⭐", title: "Review what you drink", pts: "+ pts", body: "Tell the world what you think. Reviews earn bonus points. (Honest ones. We can take it.)" },
 ];
 
 export default function Rewards() {
@@ -25,7 +25,7 @@ export default function Rewards() {
             Points are just<br />coffee you haven&apos;t<br />claimed yet.
           </h1>
           <p className="lead mt-24">
-            Every order, review, and adventure photo earns Super Duper points — and points spend like
+            Every order, review, and adventure photo earns Super Duper points, and points spend like
             cash on anything in the shop. Here&apos;s the whole program, no fine-print archaeology required.
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function Rewards() {
         </div>
         <div className="wrap">
           <p className="demo-note mt-24">
-            [Concept — earning rates shown match the current program where verified; review bonus is a
+            [Concept: earning rates shown match the current program where verified; review bonus is a
             proposed addition to solve the social-proof gap]
           </p>
         </div>

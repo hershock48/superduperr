@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!p) return {};
   return {
     title: p.name,
-    description: `${p.tagline.replace("[demo] ", "")} ${p.priceLabel} — fresh from Super Duper Coffee in Michigan.`,
+    description: `${p.tagline.replace("[demo] ", "")} ${p.priceLabel}. Fresh from Super Duper Coffee in Michigan.`,
   };
 }
 
@@ -60,7 +60,7 @@ export default async function ProductPage({
                 </p>
               ) : (
                 <p style={{ marginBottom: 10, color: "var(--ink-soft)", fontWeight: 700, fontSize: 14 }}>
-                  Be the first review — earn bonus points ⭐
+                  Be the first review and earn bonus points ⭐
                 </p>
               )}
               <h1 className="display" style={{ fontSize: "clamp(28px,4vw,44px)" }}>{p.name}</h1>

@@ -22,7 +22,7 @@ export default function ContactForm() {
           onSubmit={(e) => {
             e.preventDefault();
             setSent(true);
-            show("Message sent — demo ✓");
+            show("Message sent (demo) ✓");
           }}
         >
           <div className="field"><label>Name</label><input required placeholder="Your name" /></div>

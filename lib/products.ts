@@ -28,7 +28,7 @@ export type Product = {
 };
 
 export const FREQUENCIES = [
-  "Every month — on the 1st",
+  "Every month, on the 1st",
   "Every other Monday",
   "Every Monday",
 ];
@@ -37,7 +37,7 @@ export const products: Product[] = [
   // ————— COLD BREW —————
   {
     slug: "super-duper-cold-brew-adventure-pouch",
-    name: "Super Duper Cold Brew Adventure Pouch — 6 Pack",
+    name: "Super Duper Cold Brew Adventure Pouch (6-Pack)",
     shortName: "Cold Brew Adventure Pouch",
     category: "cold-brew",
     price: 24,
@@ -48,14 +48,14 @@ export const products: Product[] = [
     image: "/products/cold-brew-pouch.png",
     tagline: "Ready-to-drink cold brew that goes where you go.",
     description: [
-      "In your pocket, in your backpack, on the trail, on the water — six pouches of super duper strong and smooth cold brew, ready when you are.",
-      "Fresh roasted in house, cold extracted, and sealed in recyclable pouches. One customer said it best: it's like a coffee Capri Sun — except it actually wakes you up.",
+      "In your pocket, in your backpack, on the trail, on the water. Six pouches of super duper strong and smooth cold brew, ready when you are.",
+      "Fresh roasted in house, cold extracted, and sealed in recyclable pouches. One customer said it best: it's like a coffee Capri Sun, except it actually wakes you up.",
     ],
     details: ["6 pouches per pack", "Recyclable packaging", "No fridge required until opened"],
   },
   {
     slug: "super-dark-cold-brew-adventure-pouch",
-    name: "Super Dark Roast Cold Brew Adventure Pouch — 6 Pack",
+    name: "Super Dark Roast Cold Brew Adventure Pouch (6-Pack)",
     shortName: "Super Dark Adventure Pouch",
     category: "cold-brew",
     price: 24,
@@ -65,7 +65,7 @@ export const products: Product[] = [
     image: "/products/dark-pouch.png",
     tagline: "[demo] The dark one. For people who mean it.",
     description: [
-      "[demo] Everything you love about the Adventure Pouch, roasted darker and brewed bolder. Deep, smoky, zero bitterness — cold extraction keeps it smooth all the way down.",
+      "[demo] Everything you love about the Adventure Pouch, roasted darker and brewed bolder. Deep, smoky, zero bitterness. Cold extraction keeps it smooth all the way down.",
     ],
     details: ["6 pouches per pack", "Dark roast", "Recyclable packaging"],
   },
@@ -81,7 +81,7 @@ export const products: Product[] = [
     image: "/products/tap-bag.png",
     tagline: "50 ounces of cold brew. On tap, on demand.",
     description: [
-      "Fifty ounces of ready-to-drink cold brew at your fingertips. A stand-up pouch with a handle and a tap spout — lift the nozzle, pour, conquer the morning.",
+      "Fifty ounces of ready-to-drink cold brew at your fingertips. A stand-up pouch with a handle and a tap spout. Lift the nozzle, pour, conquer the morning.",
       "Beans sourced from Guatemala, Colombia, and Costa Rica, fresh roasted in house, and brewed with our own cold extraction method.",
     ],
     details: ["50 oz (1.5L) stand-up tap bag", "Fits on a fridge shelf", "Sourced from Guatemala, Colombia & Costa Rica"],
@@ -100,7 +100,7 @@ export const products: Product[] = [
     description: [
       "[demo] Our 50 oz. tap bag filled with the Super Dark roast. Rich, roasty, and dangerously easy to pour again.",
     ],
-    details: ["50 oz (1.5L) stand-up tap bag", "Dark roast", "Tap spout — no tools required"],
+    details: ["50 oz (1.5L) stand-up tap bag", "Dark roast", "Tap spout, no tools required"],
   },
 
   // ————— FRESH ROASTED COFFEE —————
@@ -117,7 +117,7 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "The coffiest tasting coffee ever.",
     description: [
-      "This is Super Duper's main blend — medium roastiness with a balance of smooth, nutty chocolate. Roasted yesterday, on your doorstep at peak freshness.",
+      "This is Super Duper's main blend: medium roastiness with a balance of smooth, nutty chocolate. Roasted yesterday, on your doorstep at peak freshness.",
       "Sourced from Costa Rica, Colombia, and Guatemala. One pound of Mega Bien.",
     ],
     details: ["1 lb bag", "Medium roast", "Whole bean, medium, or coarse grind"],
@@ -135,7 +135,7 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "[demo] Exactly what it says it is.",
     description: [
-      "[demo] Gnarly up front, nutty all the way through. A roast with elbows — big toasted-nut flavor that stands up to cream or rides black just fine.",
+      "[demo] Gnarly up front, nutty all the way through. A roast with elbows. Big toasted-nut flavor that stands up to cream or rides black just fine.",
     ],
     details: ["1 lb bag", "Whole bean, medium, or coarse grind", "Fresh roasted to order"],
   },
@@ -169,9 +169,9 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "[demo] Single origin. Honey processed. Slightly famous.",
     description: [
-      "[demo] A honey-processed single origin from Costa Rica — sweet, syrupy, and bright. The fancy one in the lineup, and it knows it.",
+      "[demo] A honey-processed single origin from Costa Rica: sweet, syrupy, and bright. The fancy one in the lineup, and it knows it.",
     ],
-    details: ["1 lb bag", "Single origin — Costa Rica", "Honey process"],
+    details: ["1 lb bag", "Single origin: Costa Rica", "Honey process"],
   },
   {
     slug: "super-duper-decaf",
@@ -194,7 +194,7 @@ export const products: Product[] = [
   // ————— OF-THE-MONTH CLUBS & SUBSCRIBE-AND-SAVE —————
   {
     slug: "cold-brew-of-the-month-pouches",
-    name: "Cold Brew of the Month — Adventure Pouches",
+    name: "Cold Brew of the Month: Adventure Pouches",
     shortName: "Cold Brew Club · Pouches",
     category: "subscriptions",
     price: 22,
@@ -211,7 +211,7 @@ export const products: Product[] = [
   },
   {
     slug: "cold-brew-tap-bag-subscription",
-    name: "Cold Brew of the Month — 50 oz. Tap Bag",
+    name: "Cold Brew of the Month: 50 oz. Tap Bag",
     shortName: "Cold Brew Club · Tap Bag",
     category: "subscriptions",
     price: 22,
@@ -239,13 +239,13 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "Our roaster's monthly obsession, in your mailbox.",
     description: [
-      "Every month our roaster picks a bean worth talking about, roasts it fresh, and ships it to you. Members vote on roast direction — lighter or darker — through the Roaster's Choice survey.",
+      "Every month our roaster picks a bean worth talking about, roasts it fresh, and ships it to you. Members vote on roast direction, lighter or darker, through the Roaster's Choice survey.",
     ],
     details: ["From $18/month", "3-month starter commitment", "Members help pick the roasts"],
   },
   {
     slug: "subscribe-save-mega-bien",
-    name: "Subscribe & Save — Mega Bien Blend",
+    name: "Subscribe & Save: Mega Bien Blend",
     shortName: "Mega Bien · Subscription",
     category: "subscriptions",
     price: 15.75,
@@ -256,13 +256,13 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "Never run out of the coffiest coffee.",
     description: [
-      "The Mega Bien Blend on autopilot — pick weekly, bi-weekly, or monthly delivery and lock in 12.5% off forever.",
+      "The Mega Bien Blend on autopilot. Pick weekly, bi-weekly, or monthly delivery and lock in 12.5% off forever.",
     ],
     details: ["From $15.75/month", "Pause or cancel anytime", "12.5% subscriber discount"],
   },
   {
     slug: "subscribe-save-dark-blend",
-    name: "Subscribe & Save — Super Duper Dark Blend",
+    name: "Subscribe & Save: Super Duper Dark Blend",
     shortName: "Dark Blend · Subscription",
     category: "subscriptions",
     price: 15.75,
@@ -292,7 +292,7 @@ export const products: Product[] = [
     imageFull: true,
     tagline: "Send caffeine. Instantly.",
     description: [
-      "An electronic gift card, straight to the inbox of your best friend, mom, dad, brother, sister, enemy — whoever. Delivered by email within minutes of purchase.",
+      "An electronic gift card, straight to the inbox of your best friend, mom, dad, brother, sister, enemy, whoever. Delivered by email within minutes of purchase.",
     ],
     details: ["$25, $50, $75 or $100", "Delivered by email", "Never expires"],
   },
@@ -301,8 +301,8 @@ export const products: Product[] = [
 export const bySlug = (slug: string) => products.find((p) => p.slug === slug);
 
 export const categories: { key: Category; label: string; blurb: string }[] = [
-  { key: "cold-brew", label: "Cold Brew", blurb: "Pouches and tap bags — fresh roasted, cold extracted, ready anywhere." },
+  { key: "cold-brew", label: "Cold Brew", blurb: "Pouches and tap bags. Fresh roasted, cold extracted, ready for any adventure." },
   { key: "coffee", label: "Fresh Roasted", blurb: "Roasted to order. Roast Tuesday, at your door by the weekend." },
-  { key: "subscriptions", label: "Clubs & Subscriptions", blurb: "Of-the-month clubs and subscribe-and-save — 12.5% off, forever." },
+  { key: "subscriptions", label: "Clubs & Subscriptions", blurb: "Of-the-month clubs and subscribe-and-save. 12.5% off, forever." },
   { key: "gift-cards", label: "Gift Cards", blurb: "Instant email delivery. $25 to $100." },
 ];

@@ -13,7 +13,7 @@ export default function EmailCapture() {
         onSubmit={(e) => {
           e.preventDefault();
           if (email.trim()) {
-            show("You're on the list — +50 points at signup (demo) ✓");
+            show("You're on the list. +50 points at signup (demo) ✓");
             setEmail("");
           }
         }}

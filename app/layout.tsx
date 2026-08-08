@@ -11,11 +11,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://superduperdrinks.com"),
   title: {
-    default: "Super Duper Coffee — Fresh Roasted Coffee & Cold Brew, Made in Michigan",
+    default: "Super Duper Coffee: Fresh Roasted Coffee & Cold Brew, Made in Michigan",
     template: "%s · Super Duper Coffee",
   },
   description:
-    "Super duper good coffee, roasted fresh to order in Michigan. Cold brew adventure pouches, 50 oz tap bags, fresh roasted beans, and coffee subscriptions — 2026 Meijer Award winner.",
+    "Super duper good coffee, roasted fresh to order in Michigan. Cold brew adventure pouches, 50 oz tap bags, fresh roasted beans, and coffee subscriptions. 2026 Meijer Award winner.",
   openGraph: {
     siteName: "Super Duper Coffee",
     type: "website",

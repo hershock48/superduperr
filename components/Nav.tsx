@@ -17,6 +17,7 @@ export default function Nav() {
               <span className="spark"> ★ </span> Roasted Tuesday · Brewed Wednesday · Shipped Thursday
               <span className="spark"> ★ </span> Free points with every order
               <span className="spark"> ★ </span> Made in Michigan
+              <span className="spark"> ★ </span> No bulk · No brewing · No mess · All adventure
               <span className="spark"> ★ </span> Subscribe &amp; save 12.5%
             </span>
           ))}

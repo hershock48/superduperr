@@ -14,7 +14,7 @@ export default function WholesaleForm() {
           <div style={{ fontSize: 44 }}>🎉</div>
           <h3 className="display mt-16">Application received!</h3>
           <p className="mt-8" style={{ color: "var(--ink-soft)" }}>
-            (Demo build — in production this lands in Super Duper&apos;s inbox.)
+            (Demo build. In production this lands in Super Duper&apos;s inbox.)
           </p>
         </div>
       ) : (
@@ -22,7 +22,7 @@ export default function WholesaleForm() {
           onSubmit={(e) => {
             e.preventDefault();
             setSent(true);
-            show("Wholesale application sent — demo ✓");
+            show("Wholesale application sent (demo) ✓");
           }}
         >
           <div className="grid-2" style={{ gap: 14 }}>

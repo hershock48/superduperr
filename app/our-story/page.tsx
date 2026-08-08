@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Our Story — Michigan-Made, Meijer Award Winner",
+  title: "Our Story: Michigan-Made, Meijer Award Winner",
   description:
     "Super Duper Coffee is a Michigan small business: fresh-roasted coffee and cold brew, grown through the MSU Product Center and named a 2026 Meijer Award winner.",
 };
@@ -19,7 +19,7 @@ export default function OurStory() {
           </h1>
           <p className="lead mt-24">
             Super Duper Coffee started with a simple grudge: coffee that sits in a warehouse for a year
-            shouldn&apos;t get to call itself fresh. So we built a company around a one-week promise —
+            shouldn&apos;t get to call itself fresh. So we built a company around a one-week promise:
             roast it Tuesday, brew and pack it Wednesday, ship it Thursday.
           </p>
           <p className="lead mt-16">
@@ -27,7 +27,7 @@ export default function OurStory() {
             team that would rather roast twice a week forever than cut that corner once.
           </p>
           <p className="demo-note mt-24">
-            [Concept copy — founder story, names, photos and timeline to be supplied by Super Duper]
+            [Concept copy: founder story, names, photos and timeline to be supplied by Super Duper]
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function OurStory() {
             <h2 className="display">2026 Meijer Award Winner</h2>
             <p className="lead mt-16">
               During National Small Business Week 2026, Meijer and the Michigan State University Product
-              Center selected Super Duper Cold Brew as a Meijer Award winner — recognition reserved for
+              Center selected Super Duper Cold Brew as a Meijer Award winner, recognition reserved for
               Michigan small businesses ready for the big shelves.
             </p>
             <p className="lead mt-16">
@@ -70,8 +70,8 @@ export default function OurStory() {
             <div className="card">
               <h3 className="display" style={{ fontSize: 20 }}>Fresh is a schedule</h3>
               <p className="mt-8">
-                Roast Tuesday. Brew Wednesday. Ship Thursday. If it misses the window, it doesn&apos;t ship —
-                it becomes office coffee. (Lucky office.)
+                Roast Tuesday. Brew Wednesday. Ship Thursday. If it misses the window, it doesn&apos;t ship.
+                It becomes office coffee. (Lucky office.)
               </p>
             </div>
             <div className="card">
@@ -84,7 +84,7 @@ export default function OurStory() {
             <div className="card">
               <h3 className="display" style={{ fontSize: 20 }}>Coffee should travel</h3>
               <p className="mt-8">
-                Recyclable pouches and tap bags that go camping, tailgating, road-tripping — anywhere a
+                Recyclable pouches and tap bags that go camping, tailgating, road-tripping, anywhere a
                 coffee shop isn&apos;t.
               </p>
             </div>

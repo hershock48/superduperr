@@ -18,7 +18,7 @@ export default function Footer() {
             <p style={{ color: "#8fd0cb", marginTop: 14, fontSize: 14 }}>
               sup@superduperdrinks.com
               <br />
-              [Street address &amp; phone — add before launch]
+              [Street address &amp; phone: add before launch]
             </p>
           </div>
           <div>
@@ -52,7 +52,7 @@ export default function Footer() {
         <div className="foot-bottom">
           <span>© 2026 Super Duper Company LLC. All rights reserved.</span>
           <span>
-            Concept build by <a href="https://glazedweb.com">Glazed Web</a> — demo data, not a live store.
+            Concept build by <a href="https://glazedweb.com">Glazed Web</a>. Demo data, not a live store.
           </span>
         </div>
       </div>
