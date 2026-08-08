@@ -258,7 +258,12 @@ h3.display { font-size: clamp(20px, 2.6vw, 26px); }
 }
 .day-card .day {
   font-family: var(--font-display); font-style: italic; font-size: 14px; text-transform: uppercase;
-  background: var(--teal); color: #fff; display: inline-block;
+  /* --fill is scroll-driven (MotionObserver): the pill fills with brand
+     yellow left to right as the timeline scrolls through the viewport,
+     Tuesday first, Friday-ish last. Ink text stays readable on both colors.
+     Without JS or with reduced motion, --fill stays 0 and the pill is teal. */
+  background: linear-gradient(90deg, var(--yellow) var(--fill, 0%), var(--teal) calc(var(--fill, 0%) + 4%));
+  color: var(--ink); display: inline-block;
   border: 2px solid var(--ink); border-radius: 999px; padding: 3px 12px; margin-bottom: 12px;
 }
 .day-card h3 { font-size: 19px; margin-bottom: 6px; }
