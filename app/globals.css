@@ -354,6 +354,10 @@ h3.display { font-size: clamp(20px, 2.6vw, 26px); }
   border: 1.5px solid var(--hairline); background: var(--card); border-radius: var(--r-md);
   padding: 14px 22px; box-shadow: var(--soft);
 }
+/* "Small company." lands at 55% of the headline size; with motion on it
+   arrives full-size and shrinks down when scrolled into view */
+.small-co { display: block; font-size: 0.55em; margin-bottom: 4px; }
+
 .stat .n { font-family: var(--font-display); font-size: 24px; }
 .stat .l { font-size: 13px; font-weight: 700; color: var(--ink-soft); }
 
@@ -474,15 +478,20 @@ footer.site a:hover { color: var(--yellow); }
   .motion .stars.in span:nth-child(4) { transition-delay: 0.27s; }
   .motion .stars.in span:nth-child(5) { transition-delay: 0.36s; }
 
+  /* ——— "Small company." shrinks to size on arrival ——— */
+  .motion .small-co { transition: font-size 0.7s cubic-bezier(0.2, 0.7, 0.3, 1) 0.3s; }
+  .motion .small-co:not(.in) { font-size: 1em; }
+
   /* ——— clubs banner wordplay ———
-     "shows up" slides in from the left when the banner appears;
+     "shows up" slides in from the left once the banner is well into
+     view (.in-deep, set by MotionObserver's scroll handler);
      "run out." is scroll-driven (--runout from MotionObserver) and
      drifts right, out of the banner, as you keep scrolling. */
   .motion .shows-up {
     display: inline-block; opacity: 0; transform: translateX(-48px);
-    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) 0.15s, opacity 0.6s ease 0.15s;
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) 0.1s, opacity 0.6s ease 0.1s;
   }
-  .motion .banner.in .shows-up { opacity: 1; transform: none; }
+  .motion .banner.in-deep .shows-up { opacity: 1; transform: none; }
   .motion .run-out {
     display: inline-block;
     transform: translateX(calc(var(--runout, 0) * 70vw));

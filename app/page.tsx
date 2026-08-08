@@ -119,7 +119,7 @@ export default function Home() {
           <div>
             <span className="eyebrow">Made in Michigan</span>
             <h2 className="display">
-              <span style={{ display: "block", fontSize: "0.55em", marginBottom: 4 }}>Small company.</span>
+              <span className="small-co">Small company.</span>
               Big deal.
             </h2>
             <p className="lead mt-16">
