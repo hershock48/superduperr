@@ -118,7 +118,10 @@ export default function Home() {
         <div className="wrap story-band">
           <div>
             <span className="eyebrow">Made in Michigan</span>
-            <h2 className="display">Small company. Big deal.</h2>
+            <h2 className="display">
+              <span style={{ display: "block", fontSize: "0.55em", marginBottom: 4 }}>Small company.</span>
+              Big deal.
+            </h2>
             <p className="lead mt-16">
               Super Duper started small in Michigan and grew the honest way: through the MSU Product
               Center, farmers-market miles, and coffee good enough to talk about. In 2026, Meijer and the
