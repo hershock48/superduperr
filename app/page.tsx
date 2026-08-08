@@ -49,7 +49,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow orange">The freshness cycle</span>
-            <h2 className="display">Roasted this week.<br />Not “best by” next year.</h2>
+            <h2 className="display">Fresh isn&apos;t a vibe.<br />It&apos;s a Tuesday.</h2>
             <p className="lead">
               Every single order runs on a one-week freshness loop. That&apos;s not a slogan — it&apos;s the schedule.
             </p>
@@ -63,7 +63,7 @@ export default function Home() {
             <div className="day-card">
               <span className="day">Wednesday</span>
               <h3>We brew &amp; pack</h3>
-              <p>Cold extracted, pouched, tap-bagged, and sealed at peak flavor.</p>
+              <p>Cold extracted, pouched, tap-bagged, and sealed at peak flavor. This is when the good vibes go in.</p>
             </div>
             <div className="day-card">
               <span className="day">Thursday</span>
