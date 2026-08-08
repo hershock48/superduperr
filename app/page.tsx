@@ -139,7 +139,7 @@ export default function Home() {
                 alt="Super Duper Mega Bien Coffee Blend"
                 width={380}
                 height={380}
-                style={{ width: "100%", height: "auto", borderBottom: "3px solid var(--ink)" }}
+                style={{ width: "100%", height: "auto", borderBottom: "1px solid var(--hairline)" }}
               />
               <div style={{ padding: "10px 30px 34px" }}>
                 <h3 className="display center mt-16">From our roaster to Meijer shelves</h3>
