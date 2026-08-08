@@ -7,7 +7,7 @@
 
 import { useEffect } from "react";
 
-const SELECTOR = ".section-head, .day-card, .pcard, .stars";
+const SELECTOR = ".section-head, .day-card, .pcard, .stars, .banner";
 
 export default function MotionObserver() {
   useEffect(() => {
@@ -44,22 +44,35 @@ export default function MotionObserver() {
     // timeline moves through the viewport, each pill fills with yellow
     // left to right, Tuesday through Friday-ish, like a progress bar.
     let raf = 0;
+    const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
     const updateFill = () => {
       raf = 0;
-      const timeline = document.querySelector(".timeline");
-      if (!timeline) return;
-      const r = timeline.getBoundingClientRect();
       const vh = window.innerHeight;
-      // 0 when the timeline is ~10% into the viewport; 1 when its bottom
-      // rises to ~30% of the viewport height — so the week fills gradually
-      // across most of the section's scroll travel.
-      const p = Math.min(1, Math.max(0, (vh - r.top - vh * 0.1) / (r.height + vh * 0.6)));
-      const pills = timeline.querySelectorAll<HTMLElement>(".day");
-      const n = pills.length || 1;
-      pills.forEach((pill, i) => {
-        const local = Math.min(1, Math.max(0, p * n - i));
-        pill.style.setProperty("--fill", `${(local * 100).toFixed(1)}%`);
-      });
+
+      const timeline = document.querySelector(".timeline");
+      if (timeline) {
+        const r = timeline.getBoundingClientRect();
+        // 0 when the timeline is ~10% into the viewport; 1 when its bottom
+        // rises to ~30% of the viewport height — so the week fills gradually
+        // across most of the section's scroll travel.
+        const p = clamp01((vh - r.top - vh * 0.1) / (r.height + vh * 0.6));
+        const pills = timeline.querySelectorAll<HTMLElement>(".day");
+        const n = pills.length || 1;
+        pills.forEach((pill, i) => {
+          const local = clamp01(p * n - i);
+          pill.style.setProperty("--fill", `${(local * 100).toFixed(1)}%`);
+        });
+      }
+
+      // "run out." drifts right and out of the clubs banner as it rises
+      // past the middle of the viewport.
+      const runout = document.querySelector<HTMLElement>(".run-out");
+      if (runout) {
+        const host = runout.closest(".banner") ?? runout;
+        const r = host.getBoundingClientRect();
+        const p = clamp01((vh * 0.55 - r.top) / (vh * 0.5));
+        runout.style.setProperty("--runout", p.toFixed(3));
+      }
     };
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(updateFill);
