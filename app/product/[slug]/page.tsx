@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { products, bySlug, categories } from "@/lib/products";
-import ProductArt from "@/components/ProductArt";
 import ProductCard from "@/components/ProductCard";
 import BuyBox from "@/components/BuyBox";
 
@@ -48,8 +48,8 @@ export default async function ProductPage({
             <strong>{p.shortName}</strong>
           </p>
           <div className="grid-2" style={{ gap: 44, alignItems: "start" }}>
-            <div className="card center" style={{ background: "var(--paper-deep)", padding: 48, display: "flex", justifyContent: "center" }}>
-              <ProductArt kind={p.art} tint={p.artTint} size={210} />
+            <div className={`pphoto${p.imageFull ? "" : " pad"}`}>
+              <Image src={p.image} alt={p.name} width={640} height={640} priority />
             </div>
             <div>
               {p.rating ? (

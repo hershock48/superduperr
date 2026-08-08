@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Nav() {
@@ -24,7 +25,8 @@ export default function Nav() {
       <nav className="nav">
         <div className="nav-inner">
           <Link href="/" className="logo" onClick={close}>
-            Super<br />Duper<span className="drop">.</span>
+            <Image src="/brand/logo.png" alt="Super Duper Coffee" width={46} height={46} priority />
+            <span>Coffee<span className="drop">.</span></span>
           </Link>
           <button className="nav-toggle" onClick={() => setOpen(!open)} aria-label="Menu">
             {open ? "Close ✕" : "Menu ☰"}

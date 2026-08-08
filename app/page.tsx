@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { products } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
-import ProductArt from "@/components/ProductArt";
 import EmailCapture from "@/components/EmailCapture";
 
 const featured = [
@@ -32,9 +32,14 @@ export default function Home() {
               <Link href="/shop?cat=coffee" className="btn ghost">Fresh Roasted Beans</Link>
             </div>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", gap: 12, alignItems: "flex-end" }}>
-            <div className="rotate-l"><ProductArt kind="pouch" tint="#FF6B2C" size={200} /></div>
-            <div className="rotate-r" style={{ marginBottom: -18 }}><ProductArt kind="tap" tint="#7EA8D0" size={215} /></div>
+          <div className="hero-art">
+            <Image
+              src="/brand/hero-splash.png"
+              alt="Super Duper Cold Brew Adventure Pouches — medium and dark roast"
+              width={679}
+              height={534}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -126,13 +131,19 @@ export default function Home() {
             <p className="mt-32"><Link href="/our-story" className="btn primary">Read our story</Link></p>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div className="card rotate-r" style={{ maxWidth: 380, padding: 34 }}>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <ProductArt kind="bag" tint="#FF6B2C" size={140} />
+            <div className="card rotate-r" style={{ maxWidth: 380, padding: 0, overflow: "hidden" }}>
+              <Image
+                src="/products/mega-bien.png"
+                alt="Super Duper Mega Bien Coffee Blend"
+                width={380}
+                height={380}
+                style={{ width: "100%", height: "auto", borderBottom: "3px solid var(--ink)" }}
+              />
+              <div style={{ padding: "10px 30px 34px" }}>
+                <h3 className="display center mt-16">From our roaster to Meijer shelves</h3>
+                <p className="center mt-8">Find us in stores across Michigan — or straight from the source, right here.</p>
+                <p className="center mt-16"><Link href="/find-us" className="btn dark small">Find us in stores →</Link></p>
               </div>
-              <h3 className="display center mt-24">From our roaster to Meijer shelves</h3>
-              <p className="center mt-8">Find us in stores across Michigan — or straight from the source, right here.</p>
-              <p className="center mt-16"><Link href="/find-us" className="btn dark small">Find us in stores →</Link></p>
             </div>
           </div>
         </div>
@@ -143,7 +154,7 @@ export default function Home() {
         <div className="wrap">
           <div className="banner">
             <div style={{ maxWidth: 560 }}>
-              <span className="eyebrow" style={{ background: "#221510" }}>Clubs &amp; subscriptions</span>
+              <span className="eyebrow" style={{ background: "var(--petrol)" }}>Clubs &amp; subscriptions</span>
               <h2 className="display">Coffee that shows up before you run out.</h2>
               <p className="mt-8">
                 Of-the-month clubs from $18, or subscribe to your favorites and save 12.5% on every

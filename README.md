@@ -3,6 +3,11 @@
 A complete Next.js rebuild of superduperdrinks.com, built by **Glazed Web** as a pitch concept.
 Hand-written CSS, no page builder, no bloat — ~100 kB first load vs. the current WPBakery site.
 
+**Brand-true:** the design system uses Super Duper's existing identity — the real logo, the
+teal / deep-petrol / electric-yellow palette sampled from the logo and packaging, and the real
+product photography from the live store (in `public/brand` and `public/products`). Layout, copy,
+and UX are the upgrade; the brand is untouched.
+
 ## What's inside
 
 - **Every page rebuilt:** Home, Shop (filterable), 15 product pages, Our Story, Find Us in Stores,

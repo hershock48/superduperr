@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/lib/products";
-import ProductArt from "./ProductArt";
 
 export default function ProductCard({ p }: { p: Product }) {
   return (
@@ -10,8 +10,8 @@ export default function ProductCard({ p }: { p: Product }) {
         {p.monthlyClub && <span className="sticker blue">Club</span>}
         {p.rating && <span className="sticker">★ {p.rating.stars.toFixed(1)}</span>}
       </div>
-      <div className="pcard-art" style={{ background: "#f3e7d3" }}>
-        <ProductArt kind={p.art} tint={p.artTint} size={120} />
+      <div className={`pcard-art${p.imageFull ? " full" : ""}`}>
+        <Image src={p.image} alt={p.name} width={400} height={400} />
       </div>
       <div className="pcard-body">
         <div className="pcard-name">{p.shortName}</div>

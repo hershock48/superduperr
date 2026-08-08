@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,13 +8,14 @@ export default function Footer() {
         <div className="foot-grid">
           <div>
             <div className="foot-logo">
-              Super Duper<span className="drop">.</span>
+              <Image src="/brand/logo.png" alt="Super Duper Coffee" width={52} height={52} />
+              <span>Coffee<span className="drop">.</span></span>
             </div>
-            <p style={{ color: "#cfc3b8", marginTop: 14, fontSize: 15 }}>
+            <p style={{ color: "#c9ece9", marginTop: 14, fontSize: 15 }}>
               Super duper good coffee, roasted fresh to order in Michigan.
               Never go without.
             </p>
-            <p style={{ color: "#a89a8d", marginTop: 14, fontSize: 14 }}>
+            <p style={{ color: "#8fd0cb", marginTop: 14, fontSize: 14 }}>
               sup@superduperdrinks.com
               <br />
               [Street address &amp; phone — add before launch]

@@ -1,4 +1,4 @@
-// Product catalog — prices, subscription terms, and points verified against
+// Product catalog — prices, subscription terms, points, and product photos verified against
 // superduperdrinks.com (Aug 2026 audit). Copy marked [demo] is concept copy
 // for the pitch; swap for client-approved text before launch.
 
@@ -20,8 +20,8 @@ export type Product = {
   sale?: boolean;
   points: number; // reward points earned
   rating?: { stars: number; count: number };
-  art: "pouch" | "tap" | "bag" | "gift"; // which SVG illustration
-  artTint: string; // accent color for the illustration
+  image: string; // real product photo from superduperdrinks.com (see /public/products)
+  imageFull?: boolean; // photo has its own baked-in background — render full-bleed
   tagline: string;
   description: string[];
   details?: string[];
@@ -45,8 +45,7 @@ export const products: Product[] = [
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 21 },
     points: 24,
     rating: { stars: 5, count: 1 },
-    art: "pouch",
-    artTint: "#FF6B2C",
+    image: "/products/cold-brew-pouch.png",
     tagline: "Ready-to-drink cold brew that goes where you go.",
     description: [
       "In your pocket, in your backpack, on the trail, on the water — six pouches of super duper strong and smooth cold brew, ready when you are.",
@@ -63,8 +62,7 @@ export const products: Product[] = [
     priceLabel: "$24.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 21 },
     points: 24,
-    art: "pouch",
-    artTint: "#3D2417",
+    image: "/products/dark-pouch.png",
     tagline: "[demo] The dark one. For people who mean it.",
     description: [
       "[demo] Everything you love about the Adventure Pouch, roasted darker and brewed bolder. Deep, smoky, zero bitterness — cold extraction keeps it smooth all the way down.",
@@ -80,8 +78,7 @@ export const products: Product[] = [
     priceLabel: "$23.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 20.13 },
     points: 23,
-    art: "tap",
-    artTint: "#FF6B2C",
+    image: "/products/tap-bag.png",
     tagline: "50 ounces of cold brew. On tap, on demand.",
     description: [
       "Fifty ounces of ready-to-drink cold brew at your fingertips. A stand-up pouch with a handle and a tap spout — lift the nozzle, pour, conquer the morning.",
@@ -98,8 +95,7 @@ export const products: Product[] = [
     priceLabel: "$23.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 20.13 },
     points: 23,
-    art: "tap",
-    artTint: "#3D2417",
+    image: "/products/tap-bag-dark.png",
     tagline: "[demo] The big bag, gone dark.",
     description: [
       "[demo] Our 50 oz. tap bag filled with the Super Dark roast. Rich, roasty, and dangerously easy to pour again.",
@@ -117,8 +113,8 @@ export const products: Product[] = [
     priceLabel: "$18.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 15.75 },
     points: 18,
-    art: "bag",
-    artTint: "#FF6B2C",
+    image: "/products/mega-bien.png",
+    imageFull: true,
     tagline: "The coffiest tasting coffee ever.",
     description: [
       "This is Super Duper's main blend — medium roastiness with a balance of smooth, nutty chocolate. Roasted yesterday, on your doorstep at peak freshness.",
@@ -135,8 +131,8 @@ export const products: Product[] = [
     priceLabel: "$18.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 15.75 },
     points: 18,
-    art: "bag",
-    artTint: "#C8871B",
+    image: "/products/gnarly-nutty.jpg",
+    imageFull: true,
     tagline: "[demo] Exactly what it says it is.",
     description: [
       "[demo] Gnarly up front, nutty all the way through. A roast with elbows — big toasted-nut flavor that stands up to cream or rides black just fine.",
@@ -152,8 +148,8 @@ export const products: Product[] = [
     priceLabel: "$18.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 15.75 },
     points: 18,
-    art: "bag",
-    artTint: "#3D2417",
+    image: "/products/dark-blend.png",
+    imageFull: true,
     tagline: "[demo] Dark, not burnt. There's a difference.",
     description: [
       "[demo] Roasted deep for people who like their coffee to sound like a decision. Smoky-sweet, heavy body, smooth landing.",
@@ -169,8 +165,8 @@ export const products: Product[] = [
     priceLabel: "$20.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 17.5 },
     points: 20,
-    art: "bag",
-    artTint: "#E0A61B",
+    image: "/products/honey-jaguar.png",
+    imageFull: true,
     tagline: "[demo] Single origin. Honey processed. Slightly famous.",
     description: [
       "[demo] A honey-processed single origin from Costa Rica — sweet, syrupy, and bright. The fancy one in the lineup, and it knows it.",
@@ -186,8 +182,8 @@ export const products: Product[] = [
     priceLabel: "$18.00",
     subscription: { label: "Subscribe & save 12.5%", frequencies: FREQUENCIES, subPrice: 15.75 },
     points: 18,
-    art: "bag",
-    artTint: "#7C9E6C",
+    image: "/products/decaf.png",
+    imageFull: true,
     tagline: "[demo] All the flavor. None of the jitters.",
     description: [
       "[demo] Decaf that doesn't taste like a consolation prize. Fresh roasted like everything else we make, because 9pm coffee people are coffee people too.",
@@ -205,8 +201,8 @@ export const products: Product[] = [
     priceLabel: "From $22.00 / month",
     monthlyClub: true,
     points: 22,
-    art: "pouch",
-    artTint: "#7EA8D0",
+    image: "/products/club-pouch.png",
+    imageFull: true,
     tagline: "A new cold brew adventure, delivered monthly.",
     description: [
       "Our roaster picks the month's brew, we pouch it, you drink it somewhere cool. Three-month commitment, cancel anytime after.",
@@ -222,8 +218,8 @@ export const products: Product[] = [
     priceLabel: "From $22.00 / month",
     monthlyClub: true,
     points: 22,
-    art: "tap",
-    artTint: "#7EA8D0",
+    image: "/products/club-tap.png",
+    imageFull: true,
     tagline: "The big bag of the month, every month.",
     description: [
       "Fifty ounces of the roaster's monthly pick, on tap in your fridge. Three-month commitment, then month to month.",
@@ -239,8 +235,8 @@ export const products: Product[] = [
     priceLabel: "From $18.00 / month",
     monthlyClub: true,
     points: 18,
-    art: "bag",
-    artTint: "#B05EC2",
+    image: "/products/roasters-choice.jpg",
+    imageFull: true,
     tagline: "Our roaster's monthly obsession, in your mailbox.",
     description: [
       "Every month our roaster picks a bean worth talking about, roasts it fresh, and ships it to you. Members vote on roast direction — lighter or darker — through the Roaster's Choice survey.",
@@ -256,8 +252,8 @@ export const products: Product[] = [
     priceLabel: "From $15.75 / month",
     subscription: { label: "12.5% off every delivery", frequencies: FREQUENCIES },
     points: 16,
-    art: "bag",
-    artTint: "#FF6B2C",
+    image: "/products/mega-bien.png",
+    imageFull: true,
     tagline: "Never run out of the coffiest coffee.",
     description: [
       "The Mega Bien Blend on autopilot — pick weekly, bi-weekly, or monthly delivery and lock in 12.5% off forever.",
@@ -274,8 +270,8 @@ export const products: Product[] = [
     subscription: { label: "12.5% off every delivery", frequencies: FREQUENCIES },
     sale: true,
     points: 16,
-    art: "bag",
-    artTint: "#3D2417",
+    image: "/products/dark-blend.png",
+    imageFull: true,
     tagline: "The dark blend, on a schedule.",
     description: [
       "Super Duper Dark, delivered on your schedule with the subscriber discount locked in.",
@@ -292,8 +288,8 @@ export const products: Product[] = [
     price: 25,
     priceLabel: "$25 – $100",
     points: 0,
-    art: "gift",
-    artTint: "#FF6B2C",
+    image: "/products/gift-card.png",
+    imageFull: true,
     tagline: "Send caffeine. Instantly.",
     description: [
       "An electronic gift card, straight to the inbox of your best friend, mom, dad, brother, sister, enemy — whoever. Delivered by email within minutes of purchase.",

@@ -60,9 +60,9 @@ export default function FindUs() {
             </p>
             <p className="mt-24"><Link href="/wholesale" className="btn dark">Wholesale info →</Link></p>
           </div>
-          <div className="banner" style={{ background: "var(--sky)", color: "var(--ink)" }}>
+          <div className="banner" style={{ background: "var(--yellow)", color: "var(--ink)" }}>
             <div>
-              <h3 className="display">Can&apos;t find us? Order direct.</h3>
+              <h3 className="display" style={{ color: "var(--ink)", textShadow: "none" }}>Can&apos;t find us? Order direct.</h3>
               <p style={{ color: "var(--ink)", marginTop: 8 }}>
                 Straight from the roaster, points on every order.
               </p>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ProductArt from "@/components/ProductArt";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Our Story — Michigan-Made, Meijer Award Winner",
@@ -94,9 +94,9 @@ export default function OurStory() {
 
       <section className="section deep" style={{ paddingBottom: 84 }}>
         <div className="wrap center">
-          <div style={{ display: "flex", justifyContent: "center", gap: 10 }}>
-            <div className="rotate-l"><ProductArt kind="pouch" tint="#FF6B2C" size={110} /></div>
-            <div className="rotate-r"><ProductArt kind="bag" tint="#7EA8D0" size={110} /></div>
+          <div style={{ display: "flex", justifyContent: "center", gap: 10, alignItems: "flex-end" }}>
+            <div className="rotate-l"><Image src="/products/cold-brew-pouch.png" alt="Super Duper Cold Brew Adventure Pouch" width={150} height={150} /></div>
+            <div className="rotate-r"><Image src="/products/tap-bag.png" alt="Super Duper Cold Brew Tap Bag" width={160} height={160} /></div>
           </div>
           <h2 className="display mt-24">Taste what the fuss is about.</h2>
           <p className="mt-24">
