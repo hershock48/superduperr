@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     "Find Super Duper Coffee cold brew and fresh roasted coffee in stores across Michigan, including Meijer, or order direct with free reward points.",
 };
 
-const DEMO_STORES = [
+const STORES = [
   { name: "Meijer", area: "Locations rolling out across Michigan", tag: "New!" },
-  { name: "[Local grocer: client to supply]", area: "City, MI", tag: "" },
-  { name: "[Coffee shop partner: client to supply]", area: "City, MI", tag: "" },
-  { name: "[Farmers market: client to supply]", area: "Seasonal", tag: "" },
+  { name: "Horrocks Farm Market", area: "Battle Creek, MI", tag: "New!" },
+  { name: "Flatiron Brewing", area: "Manistique, MI", tag: "" },
+  { name: "The Slow Roll", area: "Detroit, MI", tag: "" },
 ];
 
 export default function FindUs() {
@@ -34,7 +34,7 @@ export default function FindUs() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="grid-2">
-            {DEMO_STORES.map((s) => (
+            {STORES.map((s) => (
               <div className="card" key={s.name} style={{ display: "flex", justifyContent: "space-between", gap: 14, alignItems: "center" }}>
                 <div>
                   <h3 style={{ fontSize: 19 }}>{s.name}</h3>
@@ -45,7 +45,7 @@ export default function FindUs() {
             ))}
           </div>
           <p className="demo-note mt-24">
-            [Concept: store list and map to be populated with Super Duper&apos;s actual retail partners]
+            [Concept: confirm store list with Super Duper before launch. A map embed can drop in here.]
           </p>
         </div>
       </section>
