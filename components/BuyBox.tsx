@@ -53,7 +53,7 @@ export default function BuyBox({ p }: { p: Product }) {
               </select>
             </div>
           )}
-          <div className="buy-price">
+          <div className="buy-price" key={mode}>
             {fmt(showing)}
             {mode === "sub" && <span className="was">{fmt(p.price)}</span>}
           </div>
@@ -69,7 +69,8 @@ export default function BuyBox({ p }: { p: Product }) {
           show(mode === "sub" || p.monthlyClub ? "Subscription added (demo build) ✓" : "Added to cart (demo build) ✓")
         }
       >
-        {p.monthlyClub ? "Join the club" : mode === "sub" ? "Start subscription" : "Add to cart"} →
+        {p.monthlyClub ? "Join the club" : mode === "sub" ? "Start subscription" : "Add to cart"}{" "}
+        <span className="arr">→</span>
       </button>
       {p.points > 0 && (
         <p className="form-note center" style={{ marginTop: 12 }}>

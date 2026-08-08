@@ -26,7 +26,7 @@ export default function EmailCapture() {
           onChange={(e) => setEmail(e.target.value)}
           aria-label="Email address"
         />
-        <button className="btn dark" type="submit">Get 50 points →</button>
+        <button className="btn dark" type="submit">Get 50 points <span className="arr">→</span></button>
       </form>
       {node}
     </>

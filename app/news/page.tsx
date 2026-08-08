@@ -85,7 +85,7 @@ export default function News() {
               New roasts and news, straight to your inbox, plus 50 points for joining.
             </p>
           </div>
-          <Link href="/rewards" className="btn primary">Join the list →</Link>
+          <Link href="/rewards" className="btn primary">Join the list <span className="arr">→</span></Link>
         </div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export default function OurStory() {
               be bringing Super Duper to more of Michigan than ever.
             </p>
             <p className="mt-32">
-              <Link href="/find-us" className="btn primary">Find us in stores →</Link>
+              <Link href="/find-us" className="btn primary">Find us in stores <span className="arr">→</span></Link>
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -100,7 +100,7 @@ export default function OurStory() {
           </div>
           <h2 className="display mt-24">Taste what the fuss is about.</h2>
           <p className="mt-24">
-            <Link href="/shop" className="btn primary">Shop the lineup →</Link>
+            <Link href="/shop" className="btn primary">Shop the lineup <span className="arr">→</span></Link>
           </p>
         </div>
       </section>

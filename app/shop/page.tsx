@@ -52,7 +52,7 @@ export default async function Shop({
             <h3 className="display">Every order earns points.</h3>
             <p>Points add up to free coffee. Reviews and photo uploads earn extra.</p>
           </div>
-          <Link href="/rewards" className="btn dark small">How rewards work →</Link>
+          <Link href="/rewards" className="btn dark small">How rewards work <span className="arr">→</span></Link>
         </div>
       </div>
     </section>

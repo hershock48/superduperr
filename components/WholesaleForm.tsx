@@ -46,7 +46,7 @@ export default function WholesaleForm() {
             </select>
           </div>
           <button className="btn primary" style={{ width: "100%" }} type="submit">
-            Send application →
+            Send application <span className="arr">→</span>
           </button>
         </form>
       )}

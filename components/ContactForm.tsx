@@ -31,7 +31,7 @@ export default function ContactForm() {
             <label>Message</label>
             <textarea required rows={5} placeholder="Drop us a line and we'll get right back to you." />
           </div>
-          <button className="btn primary" style={{ width: "100%" }} type="submit">Send it →</button>
+          <button className="btn primary" style={{ width: "100%" }} type="submit">Send it <span className="arr">→</span></button>
         </form>
       )}
       {node}

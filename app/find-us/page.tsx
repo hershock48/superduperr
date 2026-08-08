@@ -58,7 +58,7 @@ export default function FindUs() {
               We wholesale pouches, tap bags, and fresh roasted beans to grocers, cafés, gyms, and
               offices, all on the same one-week freshness cycle.
             </p>
-            <p className="mt-24"><Link href="/wholesale" className="btn dark">Wholesale info →</Link></p>
+            <p className="mt-24"><Link href="/wholesale" className="btn dark">Wholesale info <span className="arr">→</span></Link></p>
           </div>
           <div className="banner" style={{ background: "var(--yellow)", color: "var(--ink)" }}>
             <div>
@@ -66,7 +66,7 @@ export default function FindUs() {
               <p style={{ color: "var(--ink)", marginTop: 8 }}>
                 Straight from the roaster, points on every order.
               </p>
-              <p className="mt-16"><Link href="/shop" className="btn primary small">Shop online →</Link></p>
+              <p className="mt-16"><Link href="/shop" className="btn primary small">Shop online <span className="arr">→</span></Link></p>
             </div>
           </div>
         </div>

@@ -90,7 +90,7 @@ export default function Home() {
             {picks.map((p) => <ProductCard key={p.slug} p={p} />)}
           </div>
           <div className="center mt-32">
-            <Link href="/shop" className="btn dark">Shop everything →</Link>
+            <Link href="/shop" className="btn dark">Shop everything <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function Home() {
             Verified customer review, Cold Brew Adventure Pouch
           </p>
           <p className="mt-24">
-            <Link href="/rewards" className="btn ghost small">Leave a review, earn points →</Link>
+            <Link href="/rewards" className="btn ghost small">Leave a review, earn points <span className="arr">→</span></Link>
           </p>
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function Home() {
               <div style={{ padding: "10px 30px 34px" }}>
                 <h3 className="display center mt-16">From our roaster to Meijer shelves</h3>
                 <p className="center mt-8">Find us in stores across Michigan, or straight from the source right here.</p>
-                <p className="center mt-16"><Link href="/find-us" className="btn dark small">Find us in stores →</Link></p>
+                <p className="center mt-16"><Link href="/find-us" className="btn dark small">Find us in stores <span className="arr">→</span></Link></p>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function Home() {
                 delivery: weekly, bi-weekly, or monthly. Pause or cancel anytime.
               </p>
             </div>
-            <Link href="/shop?cat=subscriptions" className="btn dark">Join a club →</Link>
+            <Link href="/shop?cat=subscriptions" className="btn dark">Join a club <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

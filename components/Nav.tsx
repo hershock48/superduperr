@@ -39,7 +39,7 @@ export default function Nav() {
             <Link href="/find-us" onClick={close}>Find Us</Link>
             <Link href="/rewards" onClick={close}>Rewards</Link>
             <Link href="/wholesale" onClick={close}>Wholesale</Link>
-            <Link href="/shop" className="nav-cta" onClick={close}>Get Coffee →</Link>
+            <Link href="/shop" className="nav-cta" onClick={close}>Get Coffee <span className="arr">→</span></Link>
           </div>
         </div>
       </nav>

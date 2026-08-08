@@ -61,7 +61,7 @@ export default function Rewards() {
               that costs you nothing.
             </p>
             <p className="mt-32">
-              <Link href="/shop" className="btn primary">Start earning →</Link>
+              <Link href="/shop" className="btn primary">Start earning <span className="arr">→</span></Link>
             </p>
           </div>
           <div className="day-card rotate-l" style={{ alignSelf: "center", maxWidth: 340 }}>
