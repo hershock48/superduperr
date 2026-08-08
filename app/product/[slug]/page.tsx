@@ -54,7 +54,11 @@ export default async function ProductPage({
             <div>
               {p.rating ? (
                 <p style={{ marginBottom: 10 }}>
-                  <span className="stars">{"★".repeat(Math.round(p.rating.stars))}</span>{" "}
+                  <span className="stars" role="img" aria-label={`${p.rating.stars.toFixed(1)} out of 5 stars`}>
+                    {Array.from({ length: Math.round(p.rating.stars) }).map((_, i) => (
+                      <span key={i} aria-hidden>★</span>
+                    ))}
+                  </span>{" "}
                   <strong>{p.rating.stars.toFixed(1)}</strong>{" "}
                   <span style={{ color: "var(--ink-soft)" }}>({p.rating.count} review{p.rating.count > 1 ? "s" : ""})</span>
                 </p>

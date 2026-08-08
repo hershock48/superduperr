@@ -7,7 +7,7 @@
 
 import { useEffect } from "react";
 
-const SELECTOR = ".section-head, .day-card, .pcard";
+const SELECTOR = ".section-head, .day-card, .pcard, .stars";
 
 export default function MotionObserver() {
   useEffect(() => {

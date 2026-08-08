@@ -252,7 +252,9 @@ h3.display { font-size: clamp(20px, 2.6vw, 26px); }
   font-size: clamp(24px, 4vw, 42px); line-height: 1.1;
 }
 .review-quote .hl { color: var(--teal-deep); }
-.stars { color: var(--teal-deep); letter-spacing: 3px; font-size: 20px; }
+/* stars land yellow (brand pairing: yellow fill, ink outline); with motion
+   on they start teal and flip to yellow star-by-star when scrolled into view */
+.stars { color: var(--yellow); -webkit-text-stroke: 1.2px var(--ink); letter-spacing: 3px; font-size: 20px; }
 
 /* ——— banner CTA ——— */
 .banner {
@@ -428,6 +430,14 @@ footer.site a:hover { color: var(--yellow); }
 
   .arr { display: inline-block; transition: transform 0.18s ease; }
   .btn:hover .arr, .nav-cta:hover .arr { transform: translateX(4px); }
+
+  /* ——— stars: teal → yellow, filling left to right on reveal ——— */
+  .motion .stars span { color: var(--teal-deep); transition: color 0.35s ease; }
+  .motion .stars.in span { color: var(--yellow); }
+  .motion .stars.in span:nth-child(2) { transition-delay: 0.09s; }
+  .motion .stars.in span:nth-child(3) { transition-delay: 0.18s; }
+  .motion .stars.in span:nth-child(4) { transition-delay: 0.27s; }
+  .motion .stars.in span:nth-child(5) { transition-delay: 0.36s; }
 
   /* ——— buy box price pop (keyed remount on toggle) ——— */
   .motion .buy-price { animation: price-pop 0.28s ease; transform-origin: left center; }

@@ -98,7 +98,9 @@ export default function Home() {
       {/* ————— REVIEW ————— */}
       <section className="section deep">
         <div className="wrap center">
-          <div className="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div className="stars" role="img" aria-label="5 out of 5 stars">
+            {[0, 1, 2, 3, 4].map((i) => <span key={i} aria-hidden>★</span>)}
+          </div>
           <p className="review-quote mt-16">
             “It&apos;s like a <span className="hl">coffee Capri&nbsp;Sun</span>, except it actually wakes you up.”
           </p>
