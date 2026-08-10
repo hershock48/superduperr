@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import GlazedCredit from "@/components/GlazedCredit";
 
 export default function Footer() {
   return (
@@ -51,8 +52,12 @@ export default function Footer() {
         </div>
         <div className="foot-bottom">
           <span>© 2026 Super Duper Company LLC. All rights reserved.</span>
-          <span>
-            Concept build by <a href="https://glazedweb.com">Glazed Web</a>. Demo data, not a live store.
+          {/* The mark is the studio's real one now, but the words stay "Concept build by"
+              and the disclaimer stays with them. This is a concept, not a live store, and
+              swapping in the client-footer wording would quietly delete that. */}
+          <span className="foot-credit">
+            <GlazedCredit line="Concept build by" />
+            <span>Demo data, not a live store.</span>
           </span>
         </div>
       </div>
