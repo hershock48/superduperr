@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import GlazedCredit from "@/components/GlazedCredit";
+import GlazedPlate from "@/components/GlazedPlate";
 
 export default function Footer() {
   return (
@@ -56,11 +56,13 @@ export default function Footer() {
               and the disclaimer stays with them. This is a concept, not a live store, and
               swapping in the client-footer wording would quietly delete that. */}
           <span className="foot-credit">
-            <GlazedCredit line="Concept build by" />
             <span>Demo data, not a live store.</span>
           </span>
         </div>
       </div>
+
+      {/* Glazed Web signs off below the client's footer, not inside it. */}
+      <GlazedPlate line="Concept build by" />
     </footer>
   );
 }
